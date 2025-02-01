@@ -2,7 +2,7 @@
 body {
   background: #040D68;
   color: #f5df9f;
-  font-style:"Spicy Rice", serif "Outfit", serif;
+  font-style:"Spicy Rice", serif;
   font-size: 27px;
   font-weight: 300;
   line-height: 1.65em;
@@ -18,7 +18,7 @@ h1
   font-family: "Spicy Rice", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 60px;
+  font-size: 80px;
   color: #f5df9f;
   text-align: center;
 }
@@ -88,7 +88,8 @@ h1
 }
 
 .highlight {
-  font-size: 18px;
+  font-family: "Outfit", serif;
+  font-size: 20px;
   line-height: 24px;
   margin-left: 30px;
   opacity: .8;
