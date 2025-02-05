@@ -29,7 +29,7 @@ function fill_in_answers(answers) {
 	var answer_4 = document.querySelector('#answer_4');
 	
 	// Fill them with the provided answers
-	ansewr_1.innerText = answers['answer_1'];
+	answer_1.innerText = answers['answer_1'];
 	answer_2.innerText = answers['answer_2'];
 	answer_3.innerText = answers['answer_3'];
 	answer_4.innerText = answers['answer_4'];
