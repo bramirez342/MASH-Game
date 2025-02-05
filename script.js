@@ -5,14 +5,6 @@ function random_number(num) {
 	return Math.floor(Math.random() * num); // Round the answer down (floor) of a random number between 0 and 1 and multiply it by a number. Then return a value and exit the function.
 }
 
-// New function called mash_choice that doesn't take any parameters 
-function mash_choice() {
-	// Since MASH is a special case, give it its own list
-	var mash = ['mansion', 'apartment', 'shack', 'house'];  // The array of choices to pick from 
-	var randomNum = random_number(4);  // Use the above function to get a number between 0 and 4
-	return mash[randomNum];  // Return the list item the random number function just picked and exit the function 
-}
-
 // Get a random answer from the available answers in a given category
 function get_answer(category) { 
 	var choices = [];  // A blank array to hold the user provided answer  
@@ -31,20 +23,20 @@ function get_answer(category) {
 
 // Function to find the spans that need to be filled
 function fill_in_answers(answers) {
-	var home = document.querySelector('#home');  // This says make a new variable and find the HTML tag that has the ID of "home" 
+	var answer_1 = document.querySelector('#answer_1');
 	var answer_2 = document.querySelector('#answer_2');
 	var answer_3 = document.querySelector('#answer_3');
-	var answer_1 = document.querySelector('#answer_1');
+	var answer_4 = document.querySelector('#answer_4');
 	
 	// Fill them with the provided answers
-	home.innerText = answers['mash'];
+	ansewr_1.innerText = answers['answer_1'];
 	answer_2.innerText = answers['answer_2'];
 	answer_3.innerText = answers['answer_3'];
-	answer_1.innerText = answers['answer_1'];
-	home.innerHTML = answers.mash;  // Change the content of the element in the HTML doc with the id "home" to the "mash" value in answers 
+	answer_4.innerText = answers['answer_4'];
+	answer_1.innerHTML = answers.answer_1;
 	answer_2.innerHTML = answers.answer_2;  // Change the content of the element in the HTML doc with the id "career" to the "career" value in answers 
 	answer_3.innerHTML = answers.answer_3;
-	answer_1.innerHTML = answers.answer_1;
+	answer_4.innerHTML = answers.answer_4;
 }
 
 // Button submit handler function
@@ -54,10 +46,10 @@ function handle_submission(evt) {
 	
 	// Build up our answers object
 	var answers = {
-	    'mash': mash_choice(),
+	    'answer_1': get_answer('answer_1'),
 	    'answer_2': get_answer('answer_2'),
 	    'answer_3': get_answer('answer_3'),
-	    'answer_1': get_answer('answer_1')
+	    'answer_4': get_answer('answer_4')
 	}
 	// Fill in the answers
 	fill_in_answers(answers);
