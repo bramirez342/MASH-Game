@@ -68,7 +68,7 @@ h1
   font-family: "Outfit", serif;
   font-size: 12px;
   line-height: 13px;
-  margin: 15px 4%;
+  margin: 5px 2%;
 }
 
 .choice-bucket input {
@@ -77,7 +77,7 @@ h1
   color: #3E7894;
   font-family: "Outfit", serif;
   font-size: 18px;
-  margin: 15px 4%;
+  margin: 0px 4%;
   outline: 0;
   padding: 16px 0;
   text-indent: 20px;
